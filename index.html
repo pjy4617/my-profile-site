@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="박준용 - 모션관련 시스템 엔지니어 | R&D 총괄 | 25년 경력">
+    <meta name="author" content="박준용">
+    <title>박준용 | Motion System Engineer</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body class="font-['Inter'] bg-primary-bg text-text-primary">
+
+    <!-- Navigation Bar -->
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16 md:h-20">
+                <!-- Logo/Name -->
+                <a href="#hero" class="text-xl md:text-2xl font-bold text-text-primary hover:text-accent-primary transition-colors">
+                    박준용
+                </a>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="#about" class="nav-link text-text-secondary hover:text-accent-primary transition-colors">About</a>
+                    <a href="#experience" class="nav-link text-text-secondary hover:text-accent-primary transition-colors">Experience</a>
+                    <a href="#skills" class="nav-link text-text-secondary hover:text-accent-primary transition-colors">Skills</a>
+                    <a href="#projects" class="nav-link text-text-secondary hover:text-accent-primary transition-colors">Projects</a>
+                    <a href="#contact" class="nav-link text-text-secondary hover:text-accent-primary transition-colors">Contact</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-button" class="md:hidden text-text-primary focus:outline-none" aria-label="Toggle mobile menu" aria-expanded="false">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <div id="mobile-menu" class="hidden md:hidden bg-card-bg border-t border-accent-primary/20">
+            <div class="px-4 py-4 space-y-3">
+                <a href="#about" class="block text-text-secondary hover:text-accent-primary transition-colors">About</a>
+                <a href="#experience" class="block text-text-secondary hover:text-accent-primary transition-colors">Experience</a>
+                <a href="#skills" class="block text-text-secondary hover:text-accent-primary transition-colors">Skills</a>
+                <a href="#projects" class="block text-text-secondary hover:text-accent-primary transition-colors">Projects</a>
+                <a href="#contact" class="block text-text-secondary hover:text-accent-primary transition-colors">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="min-h-screen flex items-center justify-center px-4 hero-gradient">
+            <div class="max-w-4xl mx-auto text-center">
+                <h1 class="text-5xl md:text-7xl font-bold mb-6 fade-in-up">
+                    박준용
+                </h1>
+                <p class="text-xl md:text-2xl text-accent-secondary mb-4 fade-in-up" style="animation-delay: 0.2s;">
+                    모션관련 시스템 엔지니어 | R&D 총괄
+                </p>
+                <p class="text-lg md:text-xl text-text-secondary mb-8 fade-in-up" style="animation-delay: 0.4s;">
+                    모션관련 업무 <span class="text-highlight font-bold" id="years-counter">25</span>년 경력
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center fade-in-up" style="animation-delay: 0.6s;">
+                    <a href="#projects" class="btn-primary px-8 py-3 rounded-lg font-semibold transition-all">
+                        프로젝트 보기
+                    </a>
+                    <a href="#contact" class="btn-secondary px-8 py-3 rounded-lg font-semibold transition-all">
+                        연락하기
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-20 px-4">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center fade-in">About Me</h2>
+
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <!-- Profile Image -->
+                    <div class="flex justify-center fade-in">
+                        <div class="w-64 h-64 md:w-80 md:h-80 rounded-full bg-gradient-to-br from-accent-primary to-highlight flex items-center justify-center">
+                            <div class="w-60 h-60 md:w-76 md:h-76 rounded-full bg-card-bg flex items-center justify-center">
+                                <i class="fas fa-user text-6xl md:text-7xl text-highlight"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- About Text -->
+                    <div class="space-y-6 fade-in" style="animation-delay: 0.2s;">
+                        <p class="text-base md:text-lg text-text-secondary leading-relaxed">
+                            안녕하세요. 모션 시스템 분야에서 <strong class="text-highlight">25년간</strong> 전문성을 쌓아온
+                            시스템 엔지니어이자 R&D 총괄 박준용입니다.
+                        </p>
+                        <p class="text-base md:text-lg text-text-secondary leading-relaxed">
+                            모션 제어, 시스템 설계, 그리고 혁신적인 연구개발을 통해
+                            기술 발전에 기여하고 있습니다.
+                        </p>
+
+                        <!-- Core Values -->
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-8">
+                            <div class="bg-card-bg p-4 rounded-lg border border-accent-primary/20 hover:border-accent-primary/50 transition-all">
+                                <i class="fas fa-lightbulb text-2xl text-highlight mb-2"></i>
+                                <h3 class="font-semibold mb-1">혁신</h3>
+                                <p class="text-sm text-text-secondary">최첨단 기술 연구</p>
+                            </div>
+                            <div class="bg-card-bg p-4 rounded-lg border border-accent-primary/20 hover:border-accent-primary/50 transition-all">
+                                <i class="fas fa-users text-2xl text-highlight mb-2"></i>
+                                <h3 class="font-semibold mb-1">리더십</h3>
+                                <p class="text-sm text-text-secondary">R&D 팀 총괄</p>
+                            </div>
+                            <div class="bg-card-bg p-4 rounded-lg border border-accent-primary/20 hover:border-accent-primary/50 transition-all">
+                                <i class="fas fa-cogs text-2xl text-highlight mb-2"></i>
+                                <h3 class="font-semibold mb-1">전문성</h3>
+                                <p class="text-sm text-text-secondary">25년 경력</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="py-20 px-4 bg-card-bg/30">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center fade-in">Experience</h2>
+
+                <!-- Timeline -->
+                <div class="relative">
+                    <!-- Timeline Line -->
+                    <div class="absolute left-8 md:left-1/2 top-0 bottom-0 w-0.5 bg-accent-primary/30"></div>
+
+                    <!-- Timeline Items -->
+                    <div class="space-y-12">
+                        <!-- Item 1 -->
+                        <div class="relative pl-20 md:pl-0 md:grid md:grid-cols-2 md:gap-8 fade-in">
+                            <div class="md:text-right">
+                                <div class="inline-block bg-accent-primary text-primary-bg px-4 py-1 rounded-full font-semibold mb-2">
+                                    현재
+                                </div>
+                                <h3 class="text-xl font-bold mb-2">R&D 총괄</h3>
+                                <p class="text-text-secondary">모션 시스템 혁신 및 기술 개발 리더십</p>
+                            </div>
+                            <div class="absolute left-8 md:left-1/2 w-4 h-4 bg-accent-primary rounded-full -ml-2 md:mt-2"></div>
+                        </div>
+
+                        <!-- Item 2 -->
+                        <div class="relative pl-20 md:pl-0 md:grid md:grid-cols-2 md:gap-8 fade-in" style="animation-delay: 0.2s;">
+                            <div class="md:col-start-2">
+                                <div class="inline-block bg-accent-secondary text-primary-bg px-4 py-1 rounded-full font-semibold mb-2">
+                                    2010 - 현재
+                                </div>
+                                <h3 class="text-xl font-bold mb-2">시스템 엔지니어</h3>
+                                <p class="text-text-secondary">모션 제어 시스템 설계 및 구현</p>
+                            </div>
+                            <div class="absolute left-8 md:left-1/2 w-4 h-4 bg-accent-secondary rounded-full -ml-2 md:mt-2"></div>
+                        </div>
+
+                        <!-- Item 3 -->
+                        <div class="relative pl-20 md:pl-0 md:grid md:grid-cols-2 md:gap-8 fade-in" style="animation-delay: 0.4s;">
+                            <div class="md:text-right">
+                                <div class="inline-block bg-highlight text-primary-bg px-4 py-1 rounded-full font-semibold mb-2">
+                                    2000 - 2010
+                                </div>
+                                <h3 class="text-xl font-bold mb-2">모션 엔지니어</h3>
+                                <p class="text-text-secondary">모션 제어 기술 전문성 구축</p>
+                            </div>
+                            <div class="absolute left-8 md:left-1/2 w-4 h-4 bg-highlight rounded-full -ml-2 md:mt-2"></div>
+                        </div>
+
+                        <!-- Item 4 -->
+                        <div class="relative pl-20 md:pl-0 md:grid md:grid-cols-2 md:gap-8 fade-in" style="animation-delay: 0.6s;">
+                            <div class="md:col-start-2">
+                                <div class="inline-block bg-accent-primary/70 text-primary-bg px-4 py-1 rounded-full font-semibold mb-2">
+                                    1999
+                                </div>
+                                <h3 class="text-xl font-bold mb-2">경력 시작</h3>
+                                <p class="text-text-secondary">모션 시스템 분야 첫 발</p>
+                            </div>
+                            <div class="absolute left-8 md:left-1/2 w-4 h-4 bg-accent-primary/70 rounded-full -ml-2 md:mt-2"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="py-20 px-4">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center fade-in">Skills</h2>
+
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- C++ -->
+                    <div class="bg-card-bg p-6 rounded-lg border border-accent-primary/20 hover:border-accent-primary/50 transition-all fade-in">
+                        <div class="flex items-center mb-4">
+                            <i class="fab fa-cuttlefish text-4xl text-accent-primary mr-4"></i>
+                            <h3 class="text-2xl font-bold">C++</h3>
+                        </div>
+                        <p class="text-text-secondary mb-4">
+                            시스템 레벨 프로그래밍 및 고성능 모션 제어 알고리즘 개발
+                        </p>
+                        <div class="w-full bg-primary-bg rounded-full h-2">
+                            <div class="skill-bar bg-gradient-to-r from-accent-primary to-highlight h-2 rounded-full" data-width="95"></div>
+                        </div>
+                        <p class="text-sm text-highlight mt-2 text-right font-semibold">Expert</p>
+                    </div>
+
+                    <!-- React -->
+                    <div class="bg-card-bg p-6 rounded-lg border border-accent-primary/20 hover:border-accent-primary/50 transition-all fade-in" style="animation-delay: 0.2s;">
+                        <div class="flex items-center mb-4">
+                            <i class="fab fa-react text-4xl text-accent-primary mr-4"></i>
+                            <h3 class="text-2xl font-bold">React</h3>
+                        </div>
+                        <p class="text-text-secondary mb-4">
+                            모션 시스템 모니터링 및 제어를 위한 인터페이스 개발
+                        </p>
+                        <div class="w-full bg-primary-bg rounded-full h-2">
+                            <div class="skill-bar bg-gradient-to-r from-accent-primary to-highlight h-2 rounded-full" data-width="85"></div>
+                        </div>
+                        <p class="text-sm text-highlight mt-2 text-right font-semibold">Advanced</p>
+                    </div>
+
+                    <!-- ROS -->
+                    <div class="bg-card-bg p-6 rounded-lg border border-accent-primary/20 hover:border-accent-primary/50 transition-all fade-in" style="animation-delay: 0.4s;">
+                        <div class="flex items-center mb-4">
+                            <i class="fas fa-robot text-4xl text-accent-primary mr-4"></i>
+                            <h3 class="text-2xl font-bold">ROS</h3>
+                        </div>
+                        <p class="text-text-secondary mb-4">
+                            로봇 운영 체제를 활용한 모션 시스템 통합 및 제어
+                        </p>
+                        <div class="w-full bg-primary-bg rounded-full h-2">
+                            <div class="skill-bar bg-gradient-to-r from-accent-primary to-highlight h-2 rounded-full" data-width="90"></div>
+                        </div>
+                        <p class="text-sm text-highlight mt-2 text-right font-semibold">Expert</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-20 px-4 bg-card-bg/30">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center fade-in">Projects</h2>
+
+                <!-- Project Cards Container -->
+                <div id="projects-container" class="grid md:grid-cols-3 gap-8">
+                    <!-- Projects will be dynamically inserted here by projects.js -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-8 fade-in">Get In Touch</h2>
+                <p class="text-lg md:text-xl text-text-secondary mb-12 fade-in" style="animation-delay: 0.2s;">
+                    프로젝트 협업이나 기술 문의가 있으시다면 언제든 연락주세요.
+                </p>
+
+                <div class="flex flex-col items-center gap-6 fade-in" style="animation-delay: 0.4s;">
+                    <a href="mailto:jypark@movensys.com" class="flex items-center gap-3 text-xl text-accent-primary hover:text-highlight transition-colors">
+                        <i class="fas fa-envelope text-2xl"></i>
+                        <span>jypark@movensys.com</span>
+                    </a>
+
+                    <a href="mailto:jypark@movensys.com" class="btn-primary px-10 py-4 rounded-lg font-semibold text-lg transition-all">
+                        이메일 보내기
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-card-bg py-8 px-4 border-t border-accent-primary/20">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-text-secondary text-sm">
+                    &copy; 2024 박준용. All rights reserved.
+                </p>
+
+                <div class="flex gap-6">
+                    <a href="#about" class="text-text-secondary hover:text-highlight transition-colors text-sm">About</a>
+                    <a href="#skills" class="text-text-secondary hover:text-highlight transition-colors text-sm">Skills</a>
+                    <a href="#projects" class="text-text-secondary hover:text-highlight transition-colors text-sm">Projects</a>
+                    <a href="#contact" class="text-text-secondary hover:text-highlight transition-colors text-sm">Contact</a>
+                </div>
+
+                <button id="back-to-top" class="text-accent-primary hover:text-highlight transition-colors">
+                    <i class="fas fa-arrow-up text-xl"></i>
+                </button>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/projects.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
